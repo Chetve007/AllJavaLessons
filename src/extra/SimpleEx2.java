@@ -8,13 +8,11 @@ public class SimpleEx2 {
 	}
 	
 	private static int indexOf(int[] mas, int value) {
-		
-		for (int index = 0; index < mas.length; index++) {
+		int index;
+		for (index = 0; index < mas.length; index++) {
 			if (mas[index] == value) {
-				return index; // error compilation
 			}
 		}
-//		return value;
+		return index; // error compilation
 	}
-
 }

@@ -12,6 +12,12 @@ public class Format {
 		System.out.printf("%-5s%-11d%-25s%-11.4f%n","USD",1,"Доллар США",58.4643);
 		System.out.printf("%-5s%-11d%-25s%-11.4f%n","EUR",1,"Евро",63.3695);
 		System.out.printf("%-5s%-11d%-25s%-11.4f%n","KZT",100,"Казахский тенге",31.4654);
+		
+//		byte b = 100;
+//		double d = b;
+//		System.out.println(d);
+//		MaxMemory mem = new MaxMemory();
+//		System.out.println(mem.getClass());
 
 	}
 

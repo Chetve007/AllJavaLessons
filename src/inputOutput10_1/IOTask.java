@@ -22,19 +22,18 @@ public class IOTask {
 					System.out.println(each);
 			}
 		}
-		else if(file.isFile()) {
+		else if(file.isFile())
 			System.out.println("It's file. " + "Size " + file.length());
-		}
-		else {
-			System.out.println("The path doesn't exist, the nearest existing is: " + file);
-			
-//			String[] cont = file.list();
-//			try {
-//				for(String each : cont)
-//					System.out.println(each + "/");				
-//			} catch (NullPointerException e) {
-//				e.printStackTrace();
-//			}
-		}
+		else
+			System.out.println("The path doesn't exist, the nearest existing is: " + existing(file));
+	}
+	
+	private static String existing(File file) {
+		if(file == null)
+			return null;
+		if(file.exists())
+			return file.getAbsolutePath();
+		else
+			return existing(file.getAbsoluteFile().getParentFile());  
 	}
 }

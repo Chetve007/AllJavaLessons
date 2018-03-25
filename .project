@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>plugins</name>
+			<type>2</type>
+			<location>C:/Users/Анастасия/.p2/pool/plugins</location>
+		</link>
+	</linkedResources>
 </projectDescription>
